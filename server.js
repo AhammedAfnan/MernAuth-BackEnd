@@ -17,12 +17,7 @@ app.use(errorHandler)
 
 app.listen(port,()=>console.log(`Server started on port ${port}`))
 
-
-// 1. created middleware/errorMiddleware.js in backend  2. wrote notfound & errorHandler middlewares abd used both in server.js
-
-
-
-
+   
 
 
 
