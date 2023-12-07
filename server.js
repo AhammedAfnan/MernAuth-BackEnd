@@ -10,6 +10,9 @@ connectDB();
 
 const app = express();
 
+app.use(express.json())   // body l varunnd means user type cheyth body l varunadokke kittan ee middleware use cheyyanam
+app.use(express.urlencoded({extended:true}))   // form data's kittan ee middleware use cheyyanam...
+
 app.use('/api/users',userRoutes);
 
 app.get('/',(req,res)=>res.send('Server is ready'));
